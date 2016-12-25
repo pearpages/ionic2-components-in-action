@@ -1,5 +1,5 @@
-import {AlertController, ActionSheetController} from 'ionic-angular';
-import {Component} from '@angular/core';
+import { AlertController, ActionSheetController } from 'ionic-angular';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -39,6 +39,35 @@ export class HelloWorldPage {
     });
 
     actionSheet.present();
+  }
+
+  showPromptAlert() {
+    let prompt = this.alertCtrl.create({
+      title: 'Login',
+      message: "Enter a name for this new album",
+      inputs: [
+        {
+          name: 'title',
+          placeholder: 'Title'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+
+    prompt.present();
   }
 
   showAlert() {
