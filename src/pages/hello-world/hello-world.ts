@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: 'hello-world.html'
 })
 export class HelloWorldPage {
+
+  testRadioOpen;
+  testRadioResult;
+
   constructor(public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
 
   }
@@ -39,6 +43,28 @@ export class HelloWorldPage {
     });
 
     actionSheet.present();
+  }
+
+  showRadio() {
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Lightsaber color');
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Blue',
+      value: 'blue',
+      checked: true
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'OK',
+      handler: data => {
+        this.testRadioOpen = false;
+        this.testRadioResult = data;
+      }
+    });
+    alert.present();
   }
 
   showConfirm() {
