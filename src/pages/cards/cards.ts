@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: 'cards.html'
 })
 export class CardsExample {
+
+  event = {timestarts: null};
   constructor() {
 
   }
