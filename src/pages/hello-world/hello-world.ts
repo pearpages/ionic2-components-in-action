@@ -41,6 +41,28 @@ export class HelloWorldPage {
     actionSheet.present();
   }
 
+  showConfirm() {
+    let confirm = this.alertCtrl.create({
+      title: 'Use this lightsaber?',
+      message: 'Do you agree to use this lightsaber',
+      buttons: [
+        {
+          text: 'Disagree',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'Agree',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present();
+  }
+
   showPromptAlert() {
     let prompt = this.alertCtrl.create({
       title: 'Login',
