@@ -1,3 +1,4 @@
+import { CardsExample } from './../pages/cards/cards';
 import { MoreExamples } from './../pages/more-examples/MoreExamples';
 import { HelloWorldPage } from './../pages/hello-world/hello-world';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -14,7 +15,8 @@ import { ListPage } from '../pages/list/list';
     ItemDetailsPage,
     HelloWorldPage,
     ListPage,
-    MoreExamples
+    MoreExamples,
+    CardsExample
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +28,8 @@ import { ListPage } from '../pages/list/list';
     ItemDetailsPage,
     ListPage,
     HelloWorldPage,
-    MoreExamples
+    MoreExamples,
+    CardsExample
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
