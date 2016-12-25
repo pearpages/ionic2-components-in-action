@@ -10,6 +10,8 @@ export class HelloWorldPage {
 
   testRadioOpen;
   testRadioResult;
+  testCheckboxOpen;
+  testCheckboxResult;
 
   constructor(public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
 
@@ -45,6 +47,35 @@ export class HelloWorldPage {
     actionSheet.present();
   }
 
+  showCheckbox() {
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Which planets have you visited?');
+
+    alert.addInput({
+      type: 'checkbox',
+      label: 'Alderaan',
+      value: 'value1',
+      checked: true
+    });
+
+    alert.addInput({
+      type: 'checkbox',
+      label: 'Bespin',
+      value: 'value2'
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'Okay',
+      handler: data => {
+        this.testCheckboxOpen = false;
+        this.testCheckboxResult = data;
+      }
+    });
+
+    alert.present();
+  }
+
   showRadio() {
     let alert = this.alertCtrl.create();
     alert.setTitle('Lightsaber color');
@@ -54,6 +85,13 @@ export class HelloWorldPage {
       label: 'Blue',
       value: 'blue',
       checked: true
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Non Blue',
+      value: 'non-blue',
+      checked: false
     });
 
     alert.addButton('Cancel');
