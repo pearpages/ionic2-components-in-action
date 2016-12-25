@@ -1,3 +1,4 @@
+import { MoreExamples } from './../pages/more-examples/MoreExamples';
 import { HelloWorldPage } from './../pages/hello-world/hello-world';
 import { Component, ViewChild } from '@angular/core';
 
@@ -29,7 +30,8 @@ export class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Hello World', component: HelloWorldPage }
+      { title: 'Hello World', component: HelloWorldPage },
+      { title: 'More Examples', component: MoreExamples }
     ];
   }
 

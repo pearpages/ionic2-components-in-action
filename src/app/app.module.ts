@@ -1,3 +1,4 @@
+import { MoreExamples } from './../pages/more-examples/MoreExamples';
 import { HelloWorldPage } from './../pages/hello-world/hello-world';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -12,7 +13,8 @@ import { ListPage } from '../pages/list/list';
     HelloIonicPage,
     ItemDetailsPage,
     HelloWorldPage,
-    ListPage
+    ListPage,
+    MoreExamples
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +25,8 @@ import { ListPage } from '../pages/list/list';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    HelloWorldPage
+    HelloWorldPage,
+    MoreExamples
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
