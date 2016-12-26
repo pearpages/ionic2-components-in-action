@@ -32,8 +32,8 @@
 
     <ion-list inset>
         <ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-    {{ item }}
-  </ion-item>
+            {{ item }}
+        </ion-item>
     </ion-list>
 
     <h4>List Dividers</h4>
@@ -59,6 +59,20 @@
     </ion-list>
 
     <h4>Icon List</h4>
+
+    <ion-list>
+        <ion-list-header>Header</ion-list-header>
+        <ion-item>
+            <ion-icon name="leaf" item-left></ion-icon>Herbology
+        </ion-item>
+        <ion-item>
+            <ion-icon name="leaf" item-left></ion-icon>Herbology
+        </ion-item>
+         <ion-item>
+            <ion-icon name="leaf" item-left></ion-icon>Herbology
+        </ion-item>
+    </ion-list>
+
     <h4>Avatar List</h4>
     <h4>Multi-line List</h4>
     <h4>Sliding List</h4>
