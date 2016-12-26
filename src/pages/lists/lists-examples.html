@@ -29,7 +29,26 @@
     </ion-list>
 
     <h4>Inset List</h4>
+
+    <ion-list inset>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button>
+    </ion-list>
+
     <h4>List Dividers</h4>
+
+    <ion-item-group>
+        <ion-item-divider color="light">A</ion-item-divider>
+        <ion-item>Angola</ion-item>
+        <ion-item>Argentina</ion-item>
+    </ion-item-group>
+    <ion-item-group>
+        <ion-item-divider color="light">B</ion-item-divider>
+        <ion-item>Botsuana</ion-item>
+        <ion-item>Brazil</ion-item>
+    </ion-item-group>
+
     <h4>List Headers</h4>
     <h4>Icon List</h4>
     <h4>Avatar List</h4>
