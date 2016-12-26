@@ -1,3 +1,4 @@
+import { InputsExample } from './../pages/inputs/inputs';
 import { CardsExample } from './../pages/cards/cards';
 import { MoreExamples } from './../pages/more-examples/MoreExamples';
 import { HelloWorldPage } from './../pages/hello-world/hello-world';
@@ -33,7 +34,8 @@ export class MyApp {
       { title: 'My First List', component: ListPage },
       { title: 'Hello World', component: HelloWorldPage },
       { title: 'More Examples', component: MoreExamples },
-      { title: 'Cards Examples', component: CardsExample }
+      { title: 'Cards Examples', component: CardsExample },
+      { title: 'Inputs Examples', component: InputsExample }
     ];
   }
 

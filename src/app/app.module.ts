@@ -1,3 +1,4 @@
+import { InputsExample } from './../pages/inputs/inputs';
 import { CardsExample } from './../pages/cards/cards';
 import { MoreExamples } from './../pages/more-examples/MoreExamples';
 import { HelloWorldPage } from './../pages/hello-world/hello-world';
@@ -16,7 +17,8 @@ import { ListPage } from '../pages/list/list';
     HelloWorldPage,
     ListPage,
     MoreExamples,
-    CardsExample
+    CardsExample,
+    InputsExample
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +31,8 @@ import { ListPage } from '../pages/list/list';
     ListPage,
     HelloWorldPage,
     MoreExamples,
-    CardsExample
+    CardsExample,
+    InputsExample
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
