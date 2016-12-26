@@ -1,25 +1,40 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Lists Examples</ion-title>
-  </ion-navbar>
+        <ion-title>Lists Examples</ion-title>
+    </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-  <h3>Lists Examples</h3>
+    <h3>Lists Examples</h3>
 
-  <h4>Basic Lists</h4>
-  <h4>Inset List</h4>
-  <h4>List Dividers</h4>
-  <h4>List Headers</h4>
-  <h4>Icon List</h4>
-  <h4>Avatar List</h4>
-  <h4>Multi-line List</h4>
-  <h4>Sliding List</h4>
-  <h4>Thumbnail List</h4>
+    <h4>Basic Lists</h4>
+
+    <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button>
+    </ion-list>
+
+    <h4>No Lines</h4>
+
+    <ion-list no-lines>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button>
+    </ion-list>
+
+    <h4>Inset List</h4>
+    <h4>List Dividers</h4>
+    <h4>List Headers</h4>
+    <h4>Icon List</h4>
+    <h4>Avatar List</h4>
+    <h4>Multi-line List</h4>
+    <h4>Sliding List</h4>
+    <h4>Thumbnail List</h4>
 
 </ion-content>
