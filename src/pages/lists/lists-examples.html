@@ -31,9 +31,9 @@
     <h4>Inset List</h4>
 
     <ion-list inset>
-        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        <ion-item *ngFor="let item of items" (click)="itemSelected(item)">
     {{ item }}
-  </button>
+  </ion-item>
     </ion-list>
 
     <h4>List Dividers</h4>
@@ -50,6 +50,14 @@
     </ion-item-group>
 
     <h4>List Headers</h4>
+
+    <ion-list>
+        <ion-list-header>Header</ion-list-header>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button>
+    </ion-list>
+
     <h4>Icon List</h4>
     <h4>Avatar List</h4>
     <h4>Multi-line List</h4>
