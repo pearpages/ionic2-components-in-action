@@ -1,3 +1,4 @@
+import { SearchbarExample } from './../pages/searchbar/searchbar';
 import { RangesExample } from './../pages/ranges/ranges';
 import { RadiosExample } from './../pages/radios/radios';
 import { PopoversExample } from './../pages/popovers/popovers';
@@ -36,7 +37,8 @@ import { ListPage } from '../pages/list/list';
     PopoversExample,
     PopoverExample,
     RadiosExample,
-    RangesExample
+    RangesExample,
+    SearchbarExample
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -59,7 +61,8 @@ import { ListPage } from '../pages/list/list';
     PopoversExample,
     PopoverExample,
     RadiosExample,
-    RangesExample
+    RangesExample,
+    SearchbarExample
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
