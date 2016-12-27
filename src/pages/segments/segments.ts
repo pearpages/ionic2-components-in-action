@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'page-segments',
-  templateUrl: 'segments.html'
+    selector: 'page-segments',
+    templateUrl: 'segments.html'
 })
 export class SegmentsExample {
-  constructor() {
 
-  }
+    pet:string = 'puppies';
+
+    constructor() {
+
+    }
 }

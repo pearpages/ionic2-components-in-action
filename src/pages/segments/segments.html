@@ -1,17 +1,40 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Segments Examples</ion-title>
-  </ion-navbar>
+        <ion-title>Segments Examples</ion-title>
+    </ion-navbar>
+
+    <ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="puppies">
+                Puppies
+            </ion-segment-button>
+            <ion-segment-button value="kittens">
+                Kittens
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
 
-  <h3>Segments Examples</h3>
+    <h3>Segments Examples</h3>
 
-  
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'puppies'">
+            <ion-item>
+                <h2>Ruby</h2>
+            </ion-item>
+        </ion-list>
 
+        <ion-list *ngSwitchCase="'kittens'">
+            <ion-item>
+                <h2>Luna</h2>
+            </ion-item>
+        </ion-list>
+    </div>
+    
 </ion-content>
