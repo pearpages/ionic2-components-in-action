@@ -12,6 +12,7 @@ export class HelloWorldPage {
   testRadioResult;
   testCheckboxOpen;
   testCheckboxResult;
+  toggle = false;
 
   constructor(public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController, public toastCtrl: ToastController) {
     let toast = this.toastCtrl.create({
