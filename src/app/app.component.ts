@@ -1,3 +1,4 @@
+import { TabsComponent } from './../pages/tabs/tabs';
 import { SlidesExample } from './../pages/slides/slides';
 import { SegmentsExample } from './../pages/segments/segments';
 import { SearchbarExample } from './../pages/searchbar/searchbar';
@@ -54,7 +55,8 @@ export class MyApp {
       { title: 'Radios', component: RadiosExample },
       { title: 'Searchbar', component: SearchbarExample },
       { title: 'Segments', component: SegmentsExample },
-      { title: 'Slides', component: SlidesExample }
+      { title: 'Slides', component: SlidesExample },
+      { title: 'Tabs', component: TabsComponent }
     ];
   }
 
