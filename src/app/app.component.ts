@@ -1,3 +1,4 @@
+import { RangesExample } from './../pages/ranges/ranges';
 import { RadiosExample } from './../pages/radios/radios';
 import { PopoversExample } from './../pages/popovers/popovers';
 import { NavigationExamples } from './../pages/navigation-examples/navigation';
@@ -47,7 +48,8 @@ export class MyApp {
       { title: 'Modals Example', component: ModalsExample },
       { title: 'Navigation Examples', component: NavigationExamples },
       { title: 'Popovers Examples', component: PopoversExample },
-      { title: 'Radios Examples', component: RadiosExample }
+      { title: 'Radios Examples', component: RadiosExample },
+      { title: 'Ranges Examples', component: RangesExample }
     ];
   }
 
