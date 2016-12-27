@@ -1,3 +1,5 @@
+import { PopoversExample } from './../pages/popovers/popovers';
+import { PopoverExample } from './../pages/popovers/popover-example';
 import { NavigationExamples } from './../pages/navigation-examples/navigation';
 import { MyFormComponent } from './../pages/modals/form/form';
 import { ModalsExample } from './../pages/modals/modal';
@@ -28,7 +30,9 @@ import { ListPage } from '../pages/list/list';
     LoadingExample,
     ModalsExample,
     MyFormComponent,
-    NavigationExamples
+    NavigationExamples,
+    PopoversExample,
+    PopoverExample
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -47,7 +51,9 @@ import { ListPage } from '../pages/list/list';
     LoadingExample,
     ModalsExample,
     MyFormComponent,
-    NavigationExamples
+    NavigationExamples,
+    PopoversExample,
+    PopoverExample
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
