@@ -1,3 +1,4 @@
+import { SlidesExample } from './../pages/slides/slides';
 import { SegmentsExample } from './../pages/segments/segments';
 import { SearchbarExample } from './../pages/searchbar/searchbar';
 import { RangesExample } from './../pages/ranges/ranges';
@@ -40,7 +41,8 @@ import { ListPage } from '../pages/list/list';
     RadiosExample,
     RangesExample,
     SearchbarExample,
-    SegmentsExample
+    SegmentsExample,
+    SlidesExample
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -65,7 +67,8 @@ import { ListPage } from '../pages/list/list';
     RadiosExample,
     RangesExample,
     SearchbarExample,
-    SegmentsExample
+    SegmentsExample,
+    SlidesExample
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

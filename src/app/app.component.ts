@@ -1,3 +1,4 @@
+import { SlidesExample } from './../pages/slides/slides';
 import { SegmentsExample } from './../pages/segments/segments';
 import { SearchbarExample } from './../pages/searchbar/searchbar';
 import { RangesExample } from './../pages/ranges/ranges';
@@ -43,16 +44,17 @@ export class MyApp {
       { title: 'My First List', component: ListPage },
       { title: 'Hello World', component: HelloWorldPage },
       { title: 'More Examples', component: MoreExamples },
-      { title: 'Cards Examples', component: CardsExample },
-      { title: 'Inputs Examples', component: InputsExample },
-      { title: 'Lists Examples', component: ListsExamples },
-      { title: 'Loading Example', component: LoadingExample },
-      { title: 'Modals Example', component: ModalsExample },
-      { title: 'Navigation Examples', component: NavigationExamples },
-      { title: 'Popovers Examples', component: PopoversExample },
-      { title: 'Radios Examples', component: RadiosExample },
-      { title: 'Searchbar Examples', component: SearchbarExample },
-      { title: 'Segments Example', component: SegmentsExample }
+      { title: 'Cards', component: CardsExample },
+      { title: 'Inputs', component: InputsExample },
+      { title: 'Lists', component: ListsExamples },
+      { title: 'Loading', component: LoadingExample },
+      { title: 'Modals', component: ModalsExample },
+      { title: 'Navigation', component: NavigationExamples },
+      { title: 'Popovers', component: PopoversExample },
+      { title: 'Radios', component: RadiosExample },
+      { title: 'Searchbar', component: SearchbarExample },
+      { title: 'Segments', component: SegmentsExample },
+      { title: 'Slides', component: SlidesExample }
     ];
   }
 
