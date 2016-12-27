@@ -1,3 +1,4 @@
+import { RadiosExample } from './../pages/radios/radios';
 import { PopoversExample } from './../pages/popovers/popovers';
 import { NavigationExamples } from './../pages/navigation-examples/navigation';
 import { ModalsExample } from './../pages/modals/modal';
@@ -45,7 +46,8 @@ export class MyApp {
       { title: 'Loading Example', component: LoadingExample },
       { title: 'Modals Example', component: ModalsExample },
       { title: 'Navigation Examples', component: NavigationExamples },
-      { title: 'Popovers Examples', component: PopoversExample }
+      { title: 'Popovers Examples', component: PopoversExample },
+      { title: 'Radios Examples', component: RadiosExample }
     ];
   }
 
