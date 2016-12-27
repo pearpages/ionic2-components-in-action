@@ -1,3 +1,4 @@
+import { ModalsExample } from './../pages/modals/modal';
 import { LoadingExample } from './../pages/loading/loading-example';
 import { ListsExamples } from './../pages/lists/lists-examples';
 import { InputsExample } from './../pages/inputs/inputs';
@@ -39,7 +40,8 @@ export class MyApp {
       { title: 'Cards Examples', component: CardsExample },
       { title: 'Inputs Examples', component: InputsExample },
       { title: 'Lists Examples', component: ListsExamples },
-      { title: 'Loading Example', component: LoadingExample }
+      { title: 'Loading Example', component: LoadingExample },
+      { title: 'Modals Example', component: ModalsExample }
     ];
   }
 

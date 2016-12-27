@@ -1,3 +1,5 @@
+import { MyFormComponent } from './../pages/modals/form/form';
+import { ModalsExample } from './../pages/modals/modal';
 import { LoadingExample } from './../pages/loading/loading-example';
 import { ListsExamples } from './../pages/lists/lists-examples';
 import { InputsExample } from './../pages/inputs/inputs';
@@ -22,7 +24,9 @@ import { ListPage } from '../pages/list/list';
     CardsExample,
     InputsExample,
     ListsExamples,
-    LoadingExample
+    LoadingExample,
+    ModalsExample,
+    MyFormComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -38,7 +42,9 @@ import { ListPage } from '../pages/list/list';
     CardsExample,
     InputsExample,
     ListsExamples,
-    LoadingExample
+    LoadingExample,
+    ModalsExample,
+    MyFormComponent
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
