@@ -1,3 +1,4 @@
+import { SegmentsExample } from './../pages/segments/segments';
 import { SearchbarExample } from './../pages/searchbar/searchbar';
 import { RangesExample } from './../pages/ranges/ranges';
 import { RadiosExample } from './../pages/radios/radios';
@@ -50,7 +51,8 @@ export class MyApp {
       { title: 'Navigation Examples', component: NavigationExamples },
       { title: 'Popovers Examples', component: PopoversExample },
       { title: 'Radios Examples', component: RadiosExample },
-      { title: 'Searchbar Examples', component: SearchbarExample }
+      { title: 'Searchbar Examples', component: SearchbarExample },
+      { title: 'Segments Example', component: SegmentsExample }
     ];
   }
 
