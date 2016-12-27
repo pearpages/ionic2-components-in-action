@@ -1,17 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Radios</ion-title>
-  </ion-navbar>
+        <ion-title>Radios</ion-title>
+    </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-  <h3>Radios</h3>
+    <h3>Radios</h3>
 
-  
+    <form [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
+            <ion-list-header>
+                Language
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio value="go"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Python</ion-label>
+                <ion-radio value="python" disabled="true"></ion-radio>
+            </ion-item>
+        </ion-list>
+    </form>
+
+    <pre>
+        {{langForm.value | json}}
+    </pre>
 
 </ion-content>
