@@ -1,3 +1,4 @@
+import { NavigationExamples } from './../pages/navigation-examples/navigation';
 import { MyFormComponent } from './../pages/modals/form/form';
 import { ModalsExample } from './../pages/modals/modal';
 import { LoadingExample } from './../pages/loading/loading-example';
@@ -26,7 +27,8 @@ import { ListPage } from '../pages/list/list';
     ListsExamples,
     LoadingExample,
     ModalsExample,
-    MyFormComponent
+    MyFormComponent,
+    NavigationExamples
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -44,7 +46,8 @@ import { ListPage } from '../pages/list/list';
     ListsExamples,
     LoadingExample,
     ModalsExample,
-    MyFormComponent
+    MyFormComponent,
+    NavigationExamples
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

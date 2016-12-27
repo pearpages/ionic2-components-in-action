@@ -1,3 +1,4 @@
+import { NavigationExamples } from './../pages/navigation-examples/navigation';
 import { ModalsExample } from './../pages/modals/modal';
 import { LoadingExample } from './../pages/loading/loading-example';
 import { ListsExamples } from './../pages/lists/lists-examples';
@@ -41,7 +42,8 @@ export class MyApp {
       { title: 'Inputs Examples', component: InputsExample },
       { title: 'Lists Examples', component: ListsExamples },
       { title: 'Loading Example', component: LoadingExample },
-      { title: 'Modals Example', component: ModalsExample }
+      { title: 'Modals Example', component: ModalsExample },
+      { title: 'Navigation Examples', component: NavigationExamples }
     ];
   }
 
@@ -58,6 +60,8 @@ export class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
+    
+    //this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 }
