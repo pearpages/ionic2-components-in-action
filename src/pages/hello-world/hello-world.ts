@@ -1,5 +1,5 @@
-import { AlertController, ActionSheetController } from 'ionic-angular';
-import { Component } from '@angular/core';
+import {ActionSheetController, AlertController, ToastController} from 'ionic-angular';
+import {Component} from '@angular/core';
 
 
 @Component({
@@ -13,8 +13,13 @@ export class HelloWorldPage {
   testCheckboxOpen;
   testCheckboxResult;
 
-  constructor(public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
-
+  constructor(public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController, public toastCtrl: ToastController) {
+    let toast = this.toastCtrl.create({
+      message: 'Cool super toast',
+      position: 'top',
+      duration: 3000
+    });
+    toast.present();
   }
 
   presentActionSheet() {
