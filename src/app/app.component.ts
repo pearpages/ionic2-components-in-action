@@ -1,3 +1,4 @@
+import { ToolbarsComponent } from './../pages/toolbars/toolbars';
 import { TabsComponent } from './../pages/tabs/tabs';
 import { SlidesExample } from './../pages/slides/slides';
 import { SegmentsExample } from './../pages/segments/segments';
@@ -56,7 +57,8 @@ export class MyApp {
       { title: 'Searchbar', component: SearchbarExample },
       { title: 'Segments', component: SegmentsExample },
       { title: 'Slides', component: SlidesExample },
-      { title: 'Tabs', component: TabsComponent }
+      { title: 'Tabs', component: TabsComponent },
+      { title: 'Toolbars', component: ToolbarsComponent }
     ];
   }
 

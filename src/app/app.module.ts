@@ -1,3 +1,4 @@
+import { ToolbarsComponent } from './../pages/toolbars/toolbars';
 import { HeartComponent } from './../pages/tabs/heart';
 import { StarComponent } from './../pages/tabs/star';
 import { TabsComponent } from './../pages/tabs/tabs';
@@ -48,7 +49,8 @@ import { ListPage } from '../pages/list/list';
     SlidesExample,
     TabsComponent,
     StarComponent,
-    HeartComponent
+    HeartComponent,
+    ToolbarsComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -77,7 +79,8 @@ import { ListPage } from '../pages/list/list';
     SlidesExample,
     TabsComponent,
     StarComponent,
-    HeartComponent
+    HeartComponent,
+    ToolbarsComponent
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
