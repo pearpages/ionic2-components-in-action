@@ -1,3 +1,4 @@
+import { ContentExample } from './../pages/content/content';
 import { ToolbarsComponent } from './../pages/toolbars/toolbars';
 import { TabsComponent } from './../pages/tabs/tabs';
 import { SlidesExample } from './../pages/slides/slides';
@@ -59,7 +60,8 @@ export class MyApp {
       { title: 'Segments', component: SegmentsExample },
       { title: 'Slides', component: SlidesExample },
       { title: 'Tabs', component: TabsComponent },
-      { title: 'Toolbars', component: ToolbarsComponent }
+      { title: 'Toolbars', component: ToolbarsComponent },
+      { title: 'Content', component: ContentExample }
     ];
   }
 
