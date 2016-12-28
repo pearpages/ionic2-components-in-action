@@ -55,7 +55,12 @@ import { ListPage } from '../pages/list/list';
     ContentExample
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {}, {
+      links: [
+        {component: HelloWorldPage, name: 'Hello', segment: 'hello'},
+        {component: ListsExamples, name: 'ListsExamples', segment: 'lists'}
+      ]
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -85,6 +90,6 @@ import { ListPage } from '../pages/list/list';
     ToolbarsComponent,
     ContentExample
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
-export class AppModule {}
+export class AppModule { }
