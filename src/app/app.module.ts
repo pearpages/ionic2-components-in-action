@@ -58,7 +58,8 @@ import { ListPage } from '../pages/list/list';
     IonicModule.forRoot(MyApp, {}, {
       links: [
         {component: HelloWorldPage, name: 'Hello', segment: 'hello'},
-        {component: ListsExamples, name: 'ListsExamples', segment: 'lists'}
+        {component: LoadingExample, name: 'Loading', segment: 'loading'},
+        {component: ListsExamples, name: 'ListsExamples', segment: 'lists', defaultHistory: [HelloWorldPage,LoadingExample]}
       ]
     })
   ],
