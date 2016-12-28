@@ -55,6 +55,7 @@ export class MyApp {
       { title: 'Popovers', component: PopoversExample },
       { title: 'Radios', component: RadiosExample },
       { title: 'Searchbar', component: SearchbarExample },
+      { title: 'Ranges', component: RangesExample },
       { title: 'Segments', component: SegmentsExample },
       { title: 'Slides', component: SlidesExample },
       { title: 'Tabs', component: TabsComponent },
