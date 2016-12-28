@@ -33,6 +33,14 @@ export class ListsExamples {
 
   }
 
+  doRefresh(event) {
+    console.log(event);
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.complete();
+    }, 2000);
+  }
+
   itemSelected(item) {
     this.selected = item;
   }
